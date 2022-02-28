@@ -1,4 +1,3 @@
-import { Movie } from "../interface/MovieInterface"
 
 interface Props {
     category: string
@@ -6,7 +5,7 @@ interface Props {
 
 const Category = ({category}:Props) => {
     return (
-        <div className="d-grid gap-2 mb-3">
+        <div className="d-grid gap-2 mb-4">
             <button className="btn btn-primary" type="button">
                 {category}
             </button>

@@ -5,10 +5,12 @@ import { SearchTitle } from './components/SearchTitle';
 
 export const App = () => {
   return (
-    <div className="App">
+    <div>
       <Header title="Movies Adwars" />
-      <SearchTitle />
-      <Movies />
+      <div className="container">
+        <SearchTitle />
+        <Movies />
+      </div>
     </div>
   );
 }

@@ -19,20 +19,51 @@ export const Movies = () => {
   }, [])
 
   return (
-    <div className="container p-4">
-      <Category category="Best Picture" />
-      <div className="row">
-        {movie.filter(movie => movie.category === "Best Picture").map((filterCategory, index) => (
-          <CardMovies movie={filterCategory} key={filterCategory.id} />
-        ))}
-      </div>
-      <Category category="Categoria nueva" />
-      <div className="row">
-        {movie.filter(movie => movie.category === "Best Visual Effects").map((filterCategory, index) => (
-          <CardMovies movie={filterCategory} key={filterCategory.id} />
-        ))}
-      </div>
+    <div className="container">
+        <Category category="Best Actor" />
+        <div className="row">
+          {movie.filter(movie => movie.category === "Best Actor").map((filterCategory, index) => (
+            <CardMovies movie={filterCategory} key={filterCategory.id} />
+          ))}
+        </div>
+        <Category category="Best Actress" />
+        <div className="row">
+          {movie.filter(movie => movie.category === "Best Actress").map((filterCategory, index) => (
+            <CardMovies movie={filterCategory} key={filterCategory.id} />
+          ))}
+        </div>
+        <Category category="Best Supporting Actor" />
+        <div className="row">
+          {movie.filter(movie => movie.category === "Best Supporting Actor").map((filterCategory, index) => (
+            <CardMovies movie={filterCategory} key={filterCategory.id} />
+          ))}
+        </div>
+        <Category category="Best Supporting Actress" />
+        <div className="row">
+          {movie.filter(movie => movie.category === "Best Supporting Actress").map((filterCategory, index) => (
+            <CardMovies movie={filterCategory} key={filterCategory.id} />
+          ))}
+        </div>
+        <Category category="Best Picture" />
+        <div className="row">
+          {movie.filter(movie => movie.category === "Best Picture").map((filterCategory, index) => (
+            <CardMovies movie={filterCategory} key={filterCategory.id} />
+          ))}
+        </div>
+        <Category category="Best Director" />
+        <div className="row">
+          {movie.filter(movie => movie.category === "Best Director").map((filterCategory, index) => (
+            <CardMovies movie={filterCategory} key={filterCategory.id} />
+          ))}
+        </div>
+        <Category category="Best Visual Effects" />
+        <div className="row">
+          {movie.filter(movie => movie.category === "Best Visual Effects").map((filterCategory, index) => (
+            <CardMovies movie={filterCategory} key={filterCategory.id} />
+          ))}
+        </div>
     </div>
+    
   )
 }
 

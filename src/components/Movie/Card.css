@@ -1,0 +1,22 @@
+.card-borde{
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.border-image{
+    background-size: cover;
+    border-radius: 0.8rem 0.8rem 0 0;
+    height: 14rem;
+}
+
+.buttom{
+    border-radius: 0.3rem;
+    font-weight: 600;
+}
+
+.card{
+    transition: all 400ms ease;
+}
+.card:hover{
+    transform: translateY(-3%);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+}
