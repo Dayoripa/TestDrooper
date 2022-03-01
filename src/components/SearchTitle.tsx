@@ -1,7 +1,17 @@
+import e from "express";
+import { useState } from "react"
+import { Movie } from "./interface/MovieInterface";
+
+type FormElement = React.FormEvent<HTMLFormElement>
+
+
 export const SearchTitle = () =>{
+
     return(
-       <div className="container mt-4 mb-3">
-           <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Search a movie title"></input>
-       </div>
+        <section className="py-4 container d-flex justify-content-center">
+            <input className="form-control form-control-lg"
+            style={{width:"85%"}}
+             type="text" placeholder="Search movie" aria-label=".form-control-lg example"></input>
+       </section>
     )
 }

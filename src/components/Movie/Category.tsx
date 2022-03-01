@@ -5,8 +5,8 @@ interface Props {
 
 const Category = ({category}:Props) => {
     return (
-        <div className="d-grid gap-2 mb-4">
-            <button className="btn btn-primary" type="button">
+        <div className="d-flex justify-content-center mb-4">
+            <button className="btn btn-primary" style={{width:"85%"}} type="button">
                 {category}
             </button>
         </div>
